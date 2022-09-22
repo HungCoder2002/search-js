@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Project</title>
+    <script src="https://kit.fontawesome.com/64226793ce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="search-product" placeholder="Nhập tên sản phẩm ...">
+        </div>
+        <div class="products" id="products">
+            <div class="product">
+                <img src="data:image/jpeg;base64,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" alt="">
+                <div class="name-product">
+                    <h2>Áo T-shirt xanh dương</h2>
+                    <h3>$25</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="data:image/jpeg;base64,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" alt="">
+                <div class="name-product">
+                    <h2>Áo T-shirt đen form rộng</h2>
+                    <h3>$25</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="data:image/jpeg;base64,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" alt="">
+                <div class="name-product">
+                    <h2>Áo T-shirt Fear Of God</h2>
+                    <h3>$25</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOs7iUgRI9LmMWzH_0SmIPKrT7T-1JNmK6Vg&usqp=CAU" alt="">
+                <div class="name-product">
+                    <h2>Áo T-shirt Mikenco trắng</h2>
+                    <h3>$25</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://www.vascara.com/uploads/cms_productmedia/2021/October/14/giay-sneaker-got-vien-metallic-snk-0041-mau-be-3__60968__1634206043.jpg" alt="">
+                <div class="name-product">
+                    <h2>Sneaker phối Metallic</h2>
+                    <h3>$25</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://product.hstatic.net/200000238513/product/upload_c7888405fd544ec9b0a674e9b10451ef_1024x1024.jpg" alt="">
+                <div class="name-product">
+                    <h2>Sneaker cổ cao nam nữ</h2>
+                    <h3>$25</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://www.efootwear.eu/media/catalog/product/cache/image/650x650/0/0/0000209104530_01_bs_kopia.jpg" alt="">
+                <div class="name-product">
+                    <h2>Sneaker Nike Air Max </h2>
+                    <h3>$25</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://media.istockphoto.com/photos/shorts-picture-id1237985231?k=20&m=1237985231&s=612x612&w=0&h=LXYGTYSFa2UhCIvOoMGrWsmMu0fn0wbW7RlBcleCx1k=" alt="">
+                <div class="name-product">
+                    <h2>Quần short Stock đỏ nam</h2>
+                    <h3>$25</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://www.rough.vn/Content/Images/images/images/SH06/ANH%20SP/quan-dui-nam-nhung-tam-rough-outfit%20(1).jpg" alt="">
+                <div class="name-product">
+                    <h2>Quần short nhung tăm Rough</h2>
+                    <h3>$25</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://bizweb.dktcdn.net/100/386/444/products/quan-short-gucci-x-the-north-face-gg-canvas-chuan-authentic-2.jpg?v=1618389837370" alt="">
+                <div class="name-product">
+                    <h2>Quần short Gucci Authentic</h2>
+                    <h3>$25</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/386/444/products/quan-short-gucci-gg-jacquard-chuan-authentic-1.jpg?v=1601105334440" alt="">
+                <div class="name-product">
+                    <h2>Quần short Gucci Jacquard</h2>
+                    <h3>$25</h3>
+                </div>
+            </div>
+
+            <h2 id="error"></h2>
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
